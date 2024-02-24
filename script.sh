@@ -32,7 +32,7 @@ then
     
     TOKEN=$(cat nexus.json | grep continuationToken | cut -d ":" -f 2 | sed 's/"//g' | sed 's/ //g')
 
-    cat nexus.json | jq -r '.items[] | .name + ":" + .version' | grep -E "((stable|multi-tenancy|arm)$)|(devops)" > list.txt
+    cat nexus.json | jq -r '.items[] | .name + ":" + .version' > list.txt
 
     echo "$NEXUS_PASS" | docker login --username "$NEXUS_USER" --password-stdin $REGISTRY
 
