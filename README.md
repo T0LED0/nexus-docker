@@ -13,7 +13,7 @@ Certifique-se de ter os seguintes requisitos instalados em seu sistema:
 ## Como usar
 
 1. Defina as variáveis de ambiente necessárias no script, como `BEAREN`, `REGISTRY`, `REPOSITORY_SOURCE`, etc.
-2. Execute o script shell `backup_nexus_docker.sh`.
+2. Execute o script shell `script.sh`.
 3. Aguarde a conclusão do processo de backup e migração.
 
 ## Funcionalidades Principais
